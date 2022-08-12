@@ -1,5 +1,5 @@
 ---
-description: A Input component.
+description: Compile ts/tsx to commonjs and esmodule format.
 ---
 
 compile ts/tsx to commonjs and esmodule format.

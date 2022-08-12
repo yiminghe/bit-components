@@ -11,7 +11,7 @@
 {
     "envs/tsx-env": {
         "scope": "yiminghe.bit",
-        "version": "0.0.11",
+        "version": "0.0.12",
         "mainFile": "index.ts",
         "rootDir": "bit/envs/tsx-env"
     },
