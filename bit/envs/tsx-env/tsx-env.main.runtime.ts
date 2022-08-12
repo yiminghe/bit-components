@@ -47,6 +47,7 @@ export class TsxEnvMain {
       react.overridePackageJsonProps({
         module: 'esm/index.js',
         typings: 'dist/index.d.ts',
+        files:['esm','dist'],
       }),
       envs.override({
         getCompiler: () => esCjsCompiler,
