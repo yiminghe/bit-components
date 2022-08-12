@@ -39,7 +39,7 @@ export class TsxEnvMain {
     );
 
     const compilerBuildTask = [
-      compiler.createTask('MulCompiler', esCjsCompiler),
+      compiler.createTask('ES_CJS_Compiler', esCjsCompiler),
       ...basicBuildPipelineWithoutCompilation,
     ];
 
