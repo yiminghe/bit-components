@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -38,10 +38,11 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
-      "peerDependencies": {
-      }
-    }
+      "dependencies": {
+      },
+      "peerDependencies": {}
+    },
+    "linkCoreAspects": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your
@@ -51,6 +52,20 @@
    * see https://bit.dev/docs/workspace/variants for more info.
    **/
   "teambit.workspace/variants": {
+    "bit/envs/tsx-env": {
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "@babel/runtime": "7.x",
+            "@babel/core": "7.x",
+            "@babel/preset-env": "7.x",
+            "@babel/preset-react": "7.x",
+            "@babel/preset-typescript": "7.x",
+            "@babel/plugin-proposal-class-properties": "7.x"
+          }
+        }
+      }
+    },
     /**
      * "*" is a special rule which applied on all components in the workspace.
      **/

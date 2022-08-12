@@ -1,3 +1,9 @@
+import '@babel/preset-env';
+import '@babel/preset-react';
+import '@babel/preset-typescript';
+import '@babel/plugin-proposal-class-properties';
+
+
 const presets = [
   [require.resolve('@babel/preset-env'),{
     modules:false,
